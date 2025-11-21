@@ -22,3 +22,4 @@ A continuació, caldrà que hi treballeu els aspectes del tema i ho fareu mitjan
   - Comptabilitat/Clients: **no més de 4 hores** de treball perdut ⚠️
 - **Retenció:** Cal guardar les dades amb un historial d'almenys **un mes** 🗓️
 
+Solució: [TASCA 01](/Tasca%2001/solucio.md)
