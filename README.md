@@ -48,3 +48,43 @@ Durant **quatre setmanes**, hauràs de donar resposta a encàrrecs reals dins l�
 - 🛒 Desplegament de solucions de disseny i comerç electrònic  
 
 Aquest projecte vol posar-los en situació d’assumir, amb autonomia progressiva, rols i responsabilitats similars als que trobarien en una empresa tecnològica de mida petita o mitjana. 🏢💡
+
+**TASQUES**
+
+[TASCA 01](/Tasca 01/solucio.md)
+
+[TASCA 02](/Tasca%2002/)
+
+[TASCA 03](/Tasca%2003/)
+
+[TASCA 04](/Tasca%2004/)
+
+[TASCA 05](/Tasca%2005/)
+
+[TASCA 06](/Tasca%2006/)
+
+[TASCA 07](/Tasca%2007/)
+
+[TASCA 08](/Tasca%2008/)
+
+[TASCA 09](/Tasca%2009/)
+
+[TASCA 10](/Tasca%2010/)
+
+[TASCA 11](/Tasca%2011/)
+
+[TASCA 12](/Tasca%2012/)
+
+[TASCA 13](/Tasca%2013/)
+
+[TASCA 14](/Tasca%2014/)
+
+[TASCA 15](/Tasca%2015/)
+
+**PRODUCTES**
+
+[PRODUCTE 1](/Producte%201/)
+
+[PRODUCTE 2](/Producte%202/)
+
+[PRODUCTE 3](/Producte%203/)
