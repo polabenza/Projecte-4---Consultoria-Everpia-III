@@ -87,4 +87,8 @@ Aquest projecte vol posar-los en situació d’assumir, amb autonomia progressiv
 
 [PRODUCTE 2](/Producte%202/)
 
+<<<<<<< HEAD
 [PRODUCTE 3](/Producte%203/)
+=======
+[PRODUCTE 3](/Producte%203/)
+>>>>>>> a92acd46e72a3cbdb9c7b69e7b00c077c431c675
