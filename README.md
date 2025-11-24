@@ -51,7 +51,7 @@ Aquest projecte vol posar-los en situació d’assumir, amb autonomia progressiv
 
 **TASQUES**
 
-[TASCA 01](/Tasca 01/solucio.md)
+[TASCA 01](/Tasca%2001/)
 
 [TASCA 02](/Tasca%2002/)
 
