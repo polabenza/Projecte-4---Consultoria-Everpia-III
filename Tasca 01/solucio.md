@@ -32,3 +32,22 @@ Utilitzaria:
 - **2 tipus de suports:** NAS i Cloud  
 - **1 còpia fora de lloc:** al Cloud
 
+
+# Fase 2 (en parelles)– Proposta Unificada (Curt) 
+
+Després de comparar les respostes individuals, hem dit de fer un esquema de còpies **3-2-1** basat en centralitzar totes les dades al servidor (BD, projectes i carpetes personals), així no haurem de fer còpies dels 10 equips.  
+Utilitzarem un **NAS local** per a còpies ràpides i el **Cloud** com a còpia fora de lloc.  
+La BD tindrà còpies molt freqüents i els documents una periodicitat normal.
+
+## Taula de Proposta Unificada
+
+| **Element** | **Proposta de la Parella** | **Justificació** |
+|-------------|-----------------------------|------------------|
+| **Dades Crítiques** | BD, documents de projectes, carpetes personals al servidor | Són les dades essencials. Centralitzar-ho evita copiar els 10 PCs. |
+| **Periodicitat (BD)** | Incremental cada 4h, completa cada nit i setmanal | La BD canvia sovint i necessita seguretat alta. |
+| **Tipus de Còpia (BD)** | Incrementals + completes | Incrementals ràpides, completes per restauració estable. |
+| **Periodicitat (Docs/Usuaris)** | Incremental diària, completa setmanal i mensual | No canvien tan sovint com la BD. |
+| **Mitjà 1 (Local)** | NAS | Ràpid i ideal per restauracions immediates. |
+| **Mitjà 2 (Extern)** | Cloud | Còpia fora de lloc segons la regla 3-2-1. |
+
+
