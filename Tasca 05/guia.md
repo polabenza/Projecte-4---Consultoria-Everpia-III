@@ -200,7 +200,7 @@ ipconfig
 **Una vegada comprobat que les dos maquines es veuen ara ens podem connectar desde la màquina Zorin a la de Windows.**
 
 ```
-ssh usuari@192.168.56.102
+ssh polabenza@192.168.56.103
 ```
 
-![image](./img/26.png)
+![image](./img/27.png)
