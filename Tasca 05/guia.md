@@ -204,3 +204,29 @@ ssh polabenza@192.168.56.103
 ```
 
 ![image](./img/27.png)
+
+
+**Ara farem un túnel fent servir SSH**
+
+```
+ssh -D 9876 usuari@192.168.56.101
+```
+
+![image](./img/28.png)
+
+
+**Ara editarem les propietats de la xarxa**
+
+![image](./img/29.png)
+
+**Primer de tot anirem a la configuració de LAN, la canviem i ho deixem així**
+
+![image](./img/30.png)
+
+![image](./img/31.png)
+
+**Ara instal·lem Wireshark per comprovar que el trànsit que generem navega via SSH al servidor**
+
+**Fem ping a google i a la vegada anem a wireshark i veiem que els paquets van xifrats**
+
+![image](./img/32.png)
