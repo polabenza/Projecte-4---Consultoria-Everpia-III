@@ -134,6 +134,36 @@ mkdir /mnt/admin_tools
 mount -t nfs 192.168.56.101:/srv/nfs/admin_tools /mnt/admin_tools
 ```
 
+**Creem un arxiu desde dev01**
+
+![image](./img/21.png)
+
+**Ara canviem la IP per comprovar que ens deixa llegir**
+
+![image](./img/23.png)
+
+![image](./img/24.png)
+
+**Ara no ens deixa**
+
+![image](./img/25.png)
+
+**Ara configurem l'arxiu fstab**
+
+![image](./img/27.png)
+
+**Ara reiniciem el daemon**
+
+![image](./img/28.png)
+
+**Fem Mount -a**
+
+![image](./img/29.png)
+
+
+
+
+
 
 
 
