@@ -221,3 +221,58 @@ duplicity restore file:///media/backup/ /home/user/copia
 ```
 
 ![image](./img/38.png)
+
+
+**Ara farem una copia incremental, per això farem un arxiu**
+
+```
+fallocate -l 4MB file5
+```
+
+**Ara tornem a fer la copia amb la comanda de la imatge següent**
+
+![image](./img/39.png)
+
+**Ara crearem un script per fer que les copies es facin soles**
+
+```
+umount /media/backup
+```
+
+**Crearem un arxiu**
+
+```
+sudo nano fullbackup.sh
+```
+
+![image](./img/40.png)
+
+
+**Ara donem permisos**
+
+![image](./img/41.png)
+
+
+**Ara editarem l'arxiu crontab perque el script es fagi els diumenges a les 11 de la nit**
+
+```
+crontab -e
+```
+
+**Ho deixarem aixì**
+
+![image](./img/42.png)
+
+**Crearem un altre arxiu**
+
+```
+sudo nano incrementalbackup.sh
+```
+
+**I a dins escrivim això**
+
+![image](./img/43.png)
+
+**I ara editem l'arxiu crontab així**
+
+![image](./img/44.png)
