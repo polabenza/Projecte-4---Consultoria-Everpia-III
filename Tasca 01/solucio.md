@@ -50,4 +50,88 @@ La BD tindrà còpies molt freqüents i els documents una periodicitat normal.
 | **Mitjà 1 (Local)** | NAS | Ràpid i ideal per restauracions immediates. |
 | **Mitjà 2 (Extern)** | Cloud | Còpia fora de lloc segons la regla 3-2-1. |
 
+# Fase 3: Treball en grup
 
+## 1. Debat i Selecció
+Cada parella presenta el seu esquema. El grup debat els pros i contres de cada proposta (cost, temps de recuperació, seguretat, simplicitat).
+
+## 2. Disseny de la Política Final
+El grup ha de redactar la **Política de Còpies de Seguretat Definitiva** que presentaran a l'empresa **"Muntatges i Serveis Tècnics SL"**.
+
+---
+
+## 1) Dades Objecte de Còpia
+
+| Tipus | Objecte de Còpia | Criticitat | Comentari |
+|------|-----------------|------------|-----------|
+| Servidor de Fitxers (Ubuntu) | Bases de Dades (Comptabilitat i Clients) | Alta | Canvi constant, RPO 4h, RTO 4h |
+| Servidor de Fitxers (Ubuntu) | Documents de Projectes | Mitjana | Gran volum, canvis moderats |
+| Servidor de Fitxers (Ubuntu) | Carpetes Personals dels Usuaris | Mitjana | Canvis diaris |
+| Equips Clients (Windows 10/11) | Carpeta Documents | Mitjana | Alguns informes i arxius temporals |
+
+---
+
+## 2) Cronograma Setmanal Detallat
+
+| Dia | Dades | Tipus de Còpia | Mitjà |
+|----|------|---------------|-------|
+| Dilluns | Bases de Dades | Incremental cada 4h | NAS |
+|  | Documents de Projectes | Incremental diari | NAS |
+|  | Carpetes Personals | Incremental diari | NAS |
+|  | Clients Windows | Incremental diari | NAS |
+| Dimarts | Bases de Dades | Incremental cada 4h | NAS |
+|  | Documents de Projectes | Incremental diari | NAS |
+|  | Carpetes Personals | Incremental diari | NAS |
+|  | Clients Windows | Incremental diari | NAS |
+| Dimecres | Bases de Dades | Incremental cada 4h | NAS |
+|  | Documents de Projectes | Incremental diari | NAS |
+|  | Carpetes Personals | Incremental diari | NAS |
+|  | Clients Windows | Incremental diari | NAS |
+| Dijous | Bases de Dades | Incremental cada 4h | NAS |
+|  | Documents de Projectes | Incremental diari | NAS |
+|  | Carpetes Personals | Incremental diari | NAS |
+|  | Clients Windows | Incremental diari | NAS |
+| Divendres | Bases de Dades | Diferencial diària + Completa setmanal | NAS + Disc dur extern |
+|  | Documents de Projectes | Completa setmanal | Disc dur extern |
+|  | Carpetes Personals | Completa setmanal | Disc dur extern |
+|  | Clients Windows | Incremental diari | NAS |
+| Dissabte | Bases de Dades | Incremental cada 4h | NAS |
+|  | Documents de Projectes | Incremental diari | NAS |
+|  | Carpetes Personals | Incremental diari | NAS |
+|  | Clients Windows | Incremental diari | NAS |
+| Diumenge | Bases de Dades | Completa mensual | Cloud (AWS) |
+|  | Documents de Projectes | Completa mensual | Cloud (AWS) |
+|  | Carpetes Personals | Completa mensual | Cloud (AWS) |
+
+---
+
+## 3) Elecció de Mitjans i Ubicació (Regla 3-2-1)
+
+| Categoria | Mitjà | Ubicació | Responsabilitat |
+|---------|------|----------|-----------------|
+| Mitjà 1 (Local) | NAS intern | Sala de Servidors, accés restringit | Administrador TI |
+| Mitjà 2 (Extern) | Disc dur extern (setmanal) | Armaris segurs a l’empresa | Administrador TI |
+| Ubicació Fora de Lloc | Cloud (AWS) | Servei Cloud, dades xifrades | Administrador TI i responsable de seguretat |
+
+**Compliment de la regla 3-2-1**  
+- 3 còpies: NAS, disc extern, cloud  
+- 2 mitjans diferents: NAS + disc extern/cloud  
+- 1 còpia fora de lloc: Cloud  
+
+---
+
+## 4) Estratègia de Recuperació (RTO/RPO)
+
+### Bases de Dades (Comptabilitat / Clients)
+- **RPO 4 h**: Còpies incrementals cada 4 hores per minimitzar pèrdua de dades.
+- **RTO 4 h**: Restauració prioritària des del NAS o, si cal, des del disc dur extern.  
+  El cloud actua com a última via en cas de desastre major.
+
+### Documents de Projectes / Carpetes Personals / Clients Windows
+- **RPO 24 h**: Còpies incrementals diàries asseguren que només es perd un dia de treball.
+- **RTO ≤ 24 h**: Restauració ràpida des del NAS per incidents menors.
+
+### Procediment en cas de fallada
+1. Restaurar dades crítiques (Bases de Dades) des del NAS.
+2. Si el NAS no està disponible, utilitzar el disc dur extern.
+3. En cas de desastre total, recuperar la còpia mensual des del Cloud.
