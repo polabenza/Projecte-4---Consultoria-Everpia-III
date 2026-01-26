@@ -11,3 +11,5 @@ Aquesta guia mostra com utilitzar **AnyDesk** per rebre assistència remota. Inc
 
 Per descarregar AnyDesk, podem cercar “AnyDesk” al navegador o accedir directament a l’enllaç oficial. Un cop dins, cal fer clic al botó principal indicat com a **“Descàrrega ara”** per obtenir el mòdul **Quick Support**, que no requereix instal·lació i permet iniciar la sessió de manera ràpida.
 
+
+
