@@ -65,3 +65,4 @@ Per finalitzar, cal seguir alguns protocols per garantir la **privacitat del cli
    Sempre hem de tancar la sessió un cop resolta la incidència. Això evita que continuem veient la pantalla del client sense el seu coneixement i garanteix que la connexió s’acabi correctament.  
    Per tancar la sessió, simplement cal fer clic a la **creu situada a la part superior esquerra** de la finestra de l’aplicació.
 
+![image](./img/18.png)
